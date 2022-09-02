@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class percent_calculater {
+    public static void main(String[] arg){
+        System.out.println("CALCULATING THE MARKS SCORED BY STUDENTS IN AN EXAM");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("MARKS THE STUDENT SCORED IN SUBJECT1:");
+        float a = sc.nextFloat();
+        System.out.println(a);
+        System.out.println("MARKS THE STUDENT SCORED IN SUBJECT2:");
+        float b = sc.nextFloat();
+        System.out.println(b);
+        System.out.println("MARKS THE STUDENT SCORED IN SUBJECT3:");
+        float c = sc.nextFloat();
+        System.out.println(c);
+        System.out.println("MARKS THE STUDENT SCORED IN SUBJECT4:");
+        float d = sc.nextFloat();
+        System.out.println(d);
+        System.out.println("MARKS THE STUDENT SCORED IN SUBJECT5:");
+        float e = sc.nextFloat();
+        System.out.println(e);
+        System.out.println("THE TOTAL MARKS OF THE EXAM IS:");
+        float total = sc.nextFloat();
+        System.out.println(total);
+        System.out.println("THE PERCENTAGE SECURED BY THE STUDENT IS:");
+        float percent = ((a + b + c + d +e)/total)*100;
+        System.out.println(percent);
+
+
+    }
+}
