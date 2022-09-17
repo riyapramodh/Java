@@ -9,7 +9,7 @@ class A{
         System.out.println("meth2 of class A");
     }
 }
-class B{
+class B extends A{
     public void meth2(){
         System.out.println("meth2 of class B");
     }
