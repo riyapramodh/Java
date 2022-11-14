@@ -1,0 +1,20 @@
+interface name{
+    void firstName();
+    void secondName();
+}
+class RIA implements name{
+    public void firstName(){
+        System.out.println("my first name is : Riya");
+    }
+    public void secondName(){
+        System.out.println("my second name is : Baghyalakshmi");
+    }
+}
+
+public class interfaces {
+    public static void main(String[] args) {
+        RIA R = new RIA();
+        R.firstName();
+        R.secondName();
+    }
+}
