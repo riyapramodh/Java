@@ -1,0 +1,23 @@
+ abstract class m_phone{
+    abstract void storage(int storage);
+    abstract void colour();
+}
+class iPhone extends m_phone{
+    public void storage(int storage){
+        System.out.println("the phone storage is : "+storage);
+    }
+    public void colour(){
+        System.out.println("the colour of the phone is lilac");
+    }
+    public void model(){
+        System.out.println("the iPhone model is iphone 12");
+    }
+}
+public class abstractmeth {
+    public static void main(String[] args) {
+        iPhone Ria = new iPhone();
+        Ria.storage(128);
+        Ria.colour();
+        Ria.model();
+    }
+}
