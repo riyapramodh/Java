@@ -1,0 +1,19 @@
+abstract class Pen{
+    abstract void write ();
+    abstract void refill();
+}
+class Cello{
+    public void write(){
+        System.out.println("the pen writes with blue ink");
+    }
+    public void refill(){
+        System.out.println("the pen can be refill with black or blue ink");
+    }
+}
+public class stationary {
+    public static void main(String[] args) {
+        Cello c = new Cello();
+        c.write();
+        c.refill();
+    }
+}
