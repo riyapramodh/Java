@@ -1,0 +1,19 @@
+ class Type<T>{
+    public int a = 49;
+    private T b;
+    public void print(T name1, int name2){
+        this.b = name1;
+        this.a = name2;
+        System.out.println(b);
+        System.out.println(a);
+    }
+}
+public class prak{
+    public static void main(String[] args) {
+        Type<Integer> R = new Type<>();
+        R.print(50, 50);
+        Type<String> P = new Type<>();
+        P.print("Riya",3);
+    }
+
+}
