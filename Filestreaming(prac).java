@@ -47,3 +47,12 @@ public class rev{
 
     }
 }
+
+
+
+//
+FileOutputStream fos = new FileOutputString();
+String text = "nananan";
+fos.write(text);
+fos.flush();
+fos.close();
