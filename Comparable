@@ -1,0 +1,32 @@
+import java.util.*;
+class Sweets implements Comparable<Sweets>{
+    int number;
+    String name;
+    Sweets(Integer number, String name){
+        this.number = number;
+        this.name = name;
+    }
+    public int compareTo(Sweets sw){
+        if(number == sw.number){
+            return 0;
+        } else if (number >sw.number) {
+            return 1;
+        }
+        else{
+            return -1;
+        }
+    }
+}
+
+public class pracprac {
+    public static void main(String[] args) {
+        ArrayList<Sweets> al = new ArrayList<Sweets>();
+        al.add(new Sweets(2,"chocolate"));
+        al.add(new Sweets(5, "cakes"));
+        Collections.sort(al);
+
+        for(Sweets sw: al){
+            System.out.println(+sw.number+" "+sw.name);
+        }
+    }
+}
