@@ -1,0 +1,41 @@
+import java.util.*;
+//threads
+class pppp extends Thread{
+    public void run(){
+        for(int i = 0; i<=10; i++){
+            System.out.println("thread a");
+        }
+    }
+}
+class bbbb extends Thread{
+    public void run(){
+        for(int j = 0; j<=10; j++){
+            System.out.println("thread b");
+        }
+    }
+}
+class cccc extends Thread{
+    public void run(){
+        for(int k = 0; k<10; k++){
+        System.out.println("thread c");
+    }
+    }
+}
+public class rev{
+    public static void main(String[] args) {
+        pppp ThreadAb = new pppp();
+        bbbb ThreadBa = new bbbb();
+        cccc ThreadCc = new cccc();
+        ThreadAb.setPriority(Thread.MIN_PRIORITY);
+        ThreadBa.setPriority(Thread.MAX_PRIORITY);
+        ThreadCc.setPriority(Thread.NORM_PRIORITY);
+        System.out.println(ThreadAb.getPriority());
+        System.out.println(ThreadBa.getPriority());
+        System.out.println(ThreadCc.getPriority());
+        ThreadAb.start();
+        ThreadBa.start();
+        ThreadCc.start();
+
+    }
+}
+
