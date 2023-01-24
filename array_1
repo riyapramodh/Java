@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.*;
+class MOVIES {
+    public void name(int choice, String input) {
+        String[] names = new String[5];
+        names[0] = "Riya";
+        names[1] = "Pramod";
+        names[choice] = input;
+        for(int i=0;i< names.length;i++) {
+            System.out.println(names[i]);
+            if(names[i]=="null"){
+                break;
+            }
+        }
+
+    }
+}
+    public class prac1 {
+        public static void main(String[] args) {
+            MOVIES movie = new MOVIES();
+            Scanner sc = new Scanner(System.in);
+            System.out.println("please enter your choice:");
+            int choice  = sc.nextInt();
+            String input = sc.next();
+            movie.name(choice,input);
+
+
+        }
+    }
+
