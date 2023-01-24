@@ -25,7 +25,7 @@ public class pracprac {
         al.add(new Sweets(5, "cakes"));
         Collections.sort(al);
 
-        for(Sweets sw: al){
+        for(Sweets sw: al){ //for data_type variable : array collection
             System.out.println(+sw.number+" "+sw.name);
         }
     }
