@@ -3,8 +3,8 @@ public class reviiiii {
     public static void main(String[] args) {
         //371 = 3**3+7**3+1**3
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter how many digits your number would be:");
-        int t = sc.nextInt();
+        System.out.println("the total number of digits in your number would be 3");
+      
         int [] num1 = new int[3];
         System.out.println("enter the digits of the number:");
         for(int i = 0;i<t;i++){
